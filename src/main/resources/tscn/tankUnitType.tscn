@@ -1,0 +1,13 @@
+[gd_scene load_steps=3 format=3 uid="uid://b2b81yxo508us"]
+
+[ext_resource type="Texture2D" uid="uid://g16co2714ui1" path="res://out/production/resources/Entities/Plane.png" id="1_2m30a"]
+[ext_resource type="Script" uid="uid://1sd16rc4xg5d" path="res://src/main/kotlin/godot/lib/EntityType.kt" id="1_jriwy"]
+
+[node name="TankUnitType" type="Node2D"]
+position = Vector2(25, 41)
+script = ExtResource("1_jriwy")
+
+[node name="TankBody" type="CharacterBody2D" parent="."]
+
+[node name="TankBodySprite" type="Sprite2D" parent="TankBody"]
+texture = ExtResource("1_2m30a")
